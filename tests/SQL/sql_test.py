@@ -61,7 +61,6 @@ def test_get_assignments_in_various_states():
         sql = fo.read()
 
     sql_result = db.session.execute(text(sql)).fetchall()
-    print(sql_result)
     for itr, result in enumerate(expected_result):
         assert result[0] == sql_result[itr][0]
         assert result[1] == sql_result[itr][1]
@@ -81,7 +80,6 @@ def test_get_assignments_in_various_states():
 
     # Execute the SQL query again and compare the updated result with the expected result
     sql_result = db.session.execute(text(sql)).fetchall()
-    print(sql_result)
     for itr, result in enumerate(expected_result):
         assert result[0] == sql_result[itr][0]
         assert result[1] == sql_result[itr][1]

@@ -10,7 +10,7 @@ principal_teachers_resources = Blueprint('principal_teachers_resources', __name_
 
 @principal_teachers_resources.route('/teachers', methods=['GET'], strict_slashes=False)
 @decorators.authenticate_principal
-def list_assignments(p):
+def list_teachers(p):
     """Returns list of teachers"""
     # p is the AuthPrincipal object
     teachers = Teacher.all()
