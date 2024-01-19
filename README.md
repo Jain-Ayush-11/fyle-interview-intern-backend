@@ -1,5 +1,22 @@
 # Fyle Backend Challenge
 
+## Project Setup
+
+The project is dockerized so just need to build and run the docker container.
+Install Docker Desktop for easy GUI on windows. Clone the project and open a terminal.
+```
+$ docker-compose up --build
+```
+This will build the container and once completed, the container will be running and visible in the container section of the Docker Desktop.
+Even if the terminal is closed, the container can be started/stopped from the GUI.<br><br>
+<br>This container will run all the resources (redis, postgres, etc) for the project.
+<br>We can now access the server at [http://localhost:8000/](http://localhost:8000/).
+
+## Test Coverage
+
+![WhatsApp Image 2024-01-19 at 01 02 54](https://github.com/Jain-Ayush-11/fyle-interview-intern-backend/assets/76158814/96c95770-be84-455e-9451-5357b6546538)
+
+
 ## Who is this for?
 
 This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. You should be able to commit to at least 6 months of dedicated time for internship.
